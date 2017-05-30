@@ -1,0 +1,693 @@
+
+/* MAIN ================== */
+
+$gutter: 10
+$columns: 12
+
+.container
+	position: relative
+	max-width: 1140px
+	margin-left: auto
+	margin-right: auto
+	padding-left: $gutter + px
+	padding-right: $gutter + px
+	.row
+		margin-left: -$gutter + px
+		margin-right: -$gutter + px
+		+clr
+		&>[class*="col-"]
+			position: relative
+			min-height: 1px
+			float: left
+			padding-left: $gutter + px
+			padding-right: $gutter + px
+			
+@for $i from 1 through $columns
+	.col-#{$i}
+		width: ((100 / $columns) * $i) * 1%
+		
+.text-left
+	text-align: left !important
+
+.text-right
+	text-align: right !important
+
+/*  ICONS ================== */
+.icon 
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	background: $icons no-repeat
+
+@each $i in  play-video, free-shipping, prepayment, gift , guarantee, left-arrow, right-arrow, one-size, 
+	.icon-#{$i}
+		+s(icon-#{$i})
+
+/* BUTTON ================== */
+
+.btn, a.btn 
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	padding: 10px 20px 0
+	height: 40px
+	font: normal 14px/14px Arial, sans-serif
+	+tr(all 0.2s linear)
+	border-radius: 5px
+	background: transparent
+	border: none 
+
+/*  HEADER ================== */
+#header
+	padding-top: 40px
+.logo
+	float: left
+	.title-logo
+		color: #252525
+		font-size: 26px
+		font-weight: 400
+		text-transform: uppercase
+	.site-address
+		display: inline-block
+		color: #d2d2d2
+		font-family: "Ubuntu"
+		font-size: 13px
+		font-weight: 500
+		text-transform: uppercase	
+.contacts		
+	float: right
+.phone-block,
+.footer-list-phone
+	.phone-item 
+		display: inline-block
+		color: #252525
+		margin-left: 35px
+		&:first-child
+			margin-left: 0
+		& a 
+			font-size: 30px
+			font-weight: 400
+			text-transform: uppercase
+.consultation
+	display: block
+	float: right
+	color: #f45656
+	margin-top: 10px
+	font-family: "Myriad Pro"
+	font-size: 14px
+	font-weight: 700
+	text-transform: uppercase
+	&:hover
+		text-decoration: underline
+.overlay
+	position: fixed
+	display: none
+	z-index: 98
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(0, 0, 0, 0.32)					
+.popup
+	position: fixed
+	display: none
+	width: 750px
+	max-height: 440px
+	padding: 0 5%
+	background-color: #ffffff	
+	z-index: 100
+	text-align: center
+	.popup-bg
+		position: absolute
+		right: 0
+		bottom: 0
+		z-index: -1
+	.popup-title
+		display: inline-block
+		color: #452805
+		margin-top: 40px
+		font-size: 40px
+		font-weight: 700
+	.popup-text
+		color: #acacac
+		margin: 30px 0
+		font-size: 15px
+		font-weight: 700	
+.close-popup
+	position: absolute
+	right: -30px
+	top: 0
+	width: 20px
+	height: 20px
+	cursor: pointer
+	&:before ,
+	&:after
+		content: ''
+		height: 20px
+		border-left: 2px solid #fff
+		position: absolute
+	&:after
+		transform: rotate(45deg)
+	&:before
+		transform: rotate(-45deg)
+	&:hover:after,
+	&:hover:before
+		border-color: #f45656	
+.popup-form
+	position: relative
+	max-width: 321px
+	margin: 0 auto
+	.input-wrap
+		display: block
+		margin-bottom: 20px
+	.input-item
+		position: relative
+		padding: 6px 
+		margin-top: 5px
+		width: 100%
+		color: #acacac
+		outline: none
+		border: none
+		font-size: 15px
+		font-weight: 700
+		font-family: "Century Gothic"
+		line-height: 25px
+		text-align: center
+		border-bottom: 3px solid #ebebeb
+		box-sizing: border-box
+		background: transparent
+		resize: vertical
+		-webkit-transition: all .2s ease
+		transition: all .2s ease
+	.label-item
+		position: relative
+		display: block
+		width: 100%
+		box-sizing: border-box
+		&.active
+			.placeholder
+				top: -6px
+				color: #989b9c
+				font-size: 14px
+				line-height: 14px
+				-webkit-transform: translate(10px, 0)
+				transform: translate(10px, 0)
+			.input-item ~ .placeholder
+				color: #e7b4b4
+				padding: 0 6px
+	.input-item:focus
+		border-color: #e75555
+
+	.input-wrap .placeholder
+		position: absolute
+		top: 50%
+		display: block
+		padding: 0 10px
+		color: #acacac
+		white-space: nowrap
+		font-size: 14px
+		-webkit-transition: all, .4s
+		transition: all, .4s
+		-webkit-transform: translateY(-50% )
+		transform: translateY(-50% )
+		pointer-events: none
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+	.btn-send
+		width: 100%
+		height: 60px
+		padding: 5px 20px 0
+		margin: 25px 0
+		color: #fff
+		font-family: "Century Gothic"
+		font-size: 16px
+		font-weight: 700
+		line-height: 25px
+		border: 2px solid transparent
+		text-transform: uppercase
+		border-radius: 3px
+		background-color: #e75555
+		&:hover
+			color: #e75555
+			border: 2px solid #e75555
+			background-color: #fff
+.header-baner
+	position: relative
+	max-width: 1420px
+	margin: 0 auto
+	height: 800px	
+	.product-img
+		position: absolute
+		left: -60px
+		top: -10px
+		z-index: 97
+		& img
+			width: 100%
+		.img-small
+			display: none 
+		.link-video
+			position: absolute
+			top: 52px
+			right: 196px
+			.icon-play-video
+				display: block
+				margin: 0 auto
+			.link-text
+				display: block
+				color: #f45656
+				margin-top: 15px
+				font-family: "Myriad Pro"
+				font-size: 14px
+				font-weight: 700
+				line-height: 19px
+				text-align: center
+				text-transform: uppercase
+.popup-video
+	display: none
+	position: fixed
+	z-index: 107
+	text-align: center
+	background: transparent
+	width: 800px
+	height: 360px
+.popup-videoo-block #video
+	width: 100%
+	height: 100%
+	min-height: 360px
+.description-product
+	float: right	
+	min-height: 550px	
+	margin-top: 200px	
+	text-align: right 
+	.product-title
+		color: #252525
+		font-size: 60px
+		font-weight: 700
+		line-height: 60px
+		max-width: 70%
+		float: right
+	.product-descr
+		color: #252525
+		margin: 23px 0
+		font-size: 20px
+		font-weight: 400
+		clear: both
+	.order-datails
+		margin-top: 80px
+		.price
+			display: inline-block
+			color: #f45656
+			font-family: "Myriad Pro"
+			font-weight: 700
+			font-size: 75px
+			text-transform: uppercase
+			vertical-align: middle
+			& span
+				font-size: 30px
+				text-transform: lowercase
+		.btn-order
+			display: inline-block
+			color: #252525
+			height: 54px
+			padding: 0 40px
+			margin: 0 35px 0 25px 
+			font-family: "Myriad Pro"
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase		
+			border-radius: 3px
+			border: 2px solid #f45656
+			&:hover
+				color: #fff
+				background: #f45656
+
+	.catalog
+		display: inline-block
+		color: #f45656
+		font-family: "Myriad Pro"
+		font-size: 16px
+		font-weight: 700
+		cursor: pointer
+		text-transform: uppercase 
+		&:hover
+			text-decoration: underline
+/* 5. CONTENT ================== */
+
+// section advantages begin
+#advantages
+	min-height: 220px
+	text-align: center
+	background-color: #f4f4f4
+	.advantages-item
+		.icon-wrap
+			height: 71px
+			margin: 38px 0 20px 0
+			vertical-align: middle
+			+vertical
+			.icon
+				display: inline-block
+				vertical-align: middle
+		.advantages-title
+			color: #f45656
+			font-family: "Century Gothic"
+			font-size: 18px
+			font-weight: 700
+			line-height: 25px
+// section advantages end
+
+// section product begin	
+#product
+	padding: 90px 0 45px 0
+	.product-item
+		min-height: 613px
+		margin-bottom: 35px
+		padding-bottom: 25px
+		text-align: center
+		border: 1px solid #e9e9fc
+		transition: all 0.3s ease
+		&:hover
+			box-shadow: 0 0 24px rgba(0, 0, 0, 0.16)
+
+	.product-title
+		min-height: 45px
+		color: #252525
+		margin: 23px 0
+		font-family: "Century Gothic"
+		font-size: 20px
+		font-weight: 700
+
+	.product-price
+		color: #252525
+		margin-bottom: 30px
+		font-family: "Century Gothic"
+		font-size: 30px
+		font-weight: 700
+.slide-item 
+	margin-top: 25px
+	min-height: 310px
+	img
+		margin: 0 auto 
+		max-width: 100%
+.btn-slider
+	display: none !important
+	position: absolute
+	top: -5px
+	right: 5px
+	z-index: 97
+	background: transparent
+	border: none
+	&.btn-prev
+		right: 40px
+.tabs
+	max-width: 120px
+	float: left
+.tabs-list
+	margin-right: 5px
+	.tab-item:last-child:before
+		content: ''
+		position: absolute
+		bottom: -5px
+		left: 0
+		right: -2px
+		z-index: -1
+	&:after
+		content: ''
+		display: table
+		clear: both
+	.tab-item
+		display: inline-block
+		padding: 10px 14px
+		color: #f45656
+		position: relative
+		border-radius: 50%
+		font-family: "Myriad Pro"
+		font-size: 16px
+		font-weight: 700
+		text-align: center
+		cursor: pointer
+		text-transform: uppercase
+	.active
+		background: #f45656
+		color: #fff
+.one-size
+	float: left
+	margin: 0
+	.bags-size
+		margin-top: 6px
+.tabs-content,
+.tabs-price
+	display: none
+	background: #FFF
+	margin-top: 7px
+	&.active
+		display: block
+.tabs-price
+	margin: 0	
+.bags-size
+	color: #f45656
+	font-family: "Myriad Pro"
+	font-size: 11px
+	font-weight: 700
+	text-align: left
+	text-indent: 10px
+	& span
+		text-transform: uppercase	
+.btn-buy
+	display: inline-block
+	color: #fff
+	padding: 0 27px
+	font-family: "Myriad Pro"
+	font-size: 16px
+	font-weight: 700
+	text-transform: uppercase		
+	height: 57px
+	border: 2px solid transparent
+	border-radius: 3px
+	background-color: rgba(244, 86, 86, 0)
+	background-image: linear-gradient(to top, #f45656 0%, #ff6161 99%, #ff6161 100%)
+	&:hover
+		color: #fb5d5d
+		border-radius: 3px
+		border: 2px solid #fd3c3c
+		background: #fff
+
+// section product end
+
+.product-item:hover .btn-slider
+	display: block !important
+//style for slick slider
+.slick-initialized .slick-slide
+	outline: none
+.slick-slide img
+	margin: 0 auto
+
+// section success
+
+.success
+	margin-top: 10%
+	text-align: center
+	.main-title
+		font-size: 20px
+		margin-bottom: 20px
+
+/* FOOTER ================== */
+
+#footer
+	background-color: #f4f4f4
+	.footer-list-phone
+		text-align: center
+		padding: 20px 0
+		.phone-item
+	.copyright
+		text-align: center
+		font-size: 12px
+
+/*  MEDIA ================== */
+
+@media ( max-width: 1200px )
+	.container	
+		width: 960px
+	.description-product .order-datails .price
+		display: block
+		margin-bottom: 40px
+	#product .product-title
+		margin-bottom: 0
+		min-height: 65px	
+	.description-product .product-title
+		font-size: 50px		
+		.order-datails .btn-order	
+			margin-right: 18px
+	.description-product .order-datails .btn-order
+		padding: 0 25px			
+@media ( max-width: 992px ) 
+	.container
+		position: relative
+		width: 760px
+		.row
+			.advantages-item,
+			.product-item
+				width: 50%
+				min-height: 185px
+				margin-bottom: 25px
+	.phone-block .phone-item
+		display: block
+		margin: 0				
+	.header-baner
+		height: 610px				
+	.header-baner .product-img
+		top: 195px
+		left: 15px	
+		& img
+			display: none
+		.img-small
+			display: block	
+		.link-video
+			top: 0
+			right: 80px			
+	.description-product .product-title
+		position: absolute
+		max-width: 95%
+		left: 15px
+		top: 25px
+		width: 100%
+		font-size: 35px
+		text-align: left	
+	.description-product
+		margin-top: 140px
+	.popup-video
+		width: 720px
+
+
+@media (max-width: 768px) 
+	.container
+		width: 100%
+		.row
+			margin: 0
+	#advantages .advantages-item .icon-wrap
+		margin-top: 15px				
+	.btn-slider
+		display: block !important
+	.description-product .order-datails .btn-order
+		display: block
+		float: right
+		margin: 0
+		margin-right: 10px
+	.description-product .catalog
+		float: right
+		margin: 50px 15% 20px
+		clear: both
+	.popup
+		width: 80%
+		padding: 0 5%	
+	.popup-video
+		width: 600px
+	.popup-bg
+		display: none	
+@media (max-width: 640px) 
+
+	.header-baner .product-img
+		left: -25px	
+	.description-product .order-datails .price
+		font-size: 40px	
+	.description-product .order-datails .btn-order	
+		margin-right: 5px
+		padding: 0 14px
+		font-size: 15px
+	.description-product .catalog
+		margin: 22px 12% 20px
+
+	.popup .popup-title
+		font-size: 28px	
+	.popup-form .btn-send
+		height: 45px
+		margin: 10px 0	
+	.popup .popup-title
+		margin-top: 15px
+	.popup-video
+		width: 400px	
+	.description-product .order-datails
+		margin-right: 8%		
+	.tabs,
+	.one-size
+		float: none
+		margin: 0 auto
+		margin-bottom: 20px
+		text-align: center
+	.bags-size
+		text-align: center
+	.tabs-list
+		margin-right: 0		
+	.footer-list-phone .phone-item
+		margin-top: 15px
+			
+@media (max-width: 480px) 
+	.container
+		.row
+			.advantages-item,
+			.product-item
+				min-height: 160px
+				width: 100%
+	#header
+		padding-top: 10px			
+	.logo
+		float: none
+		text-align: center	
+	.contacts
+		float: none
+		margin: 20px 0
+		text-align: center
+		.phone-item
+			margin-top: 10px
+	.consultation
+		float: none		
+		margin-top: 15px
+	.header-baner
+		min-height: 730px			
+	.header-baner .product-img
+		top: 230px
+		left: 5px
+		.link-video	
+			right: 28px
+	.popup-video
+		width: 75%	
+		height: 250px	
+	.popup-videoo-block #video
+		min-height: 200px		
+	.description-product
+		margin-top: 90px 
+		.product-title
+			text-align: center 
+			line-height: 34px
+		.product-descr
+			padding: 0 5px
+			margin-top: 70px
+			font-size: 16px
+	.description-product .order-datails
+		position: absolute
+		bottom: -80px
+		width: 100%
+		left: 0
+		.price
+			float: left
+			width: 47%
+			text-align: center
+		.btn-order	
+			float: left			
+		.catalog
+			position: absolute
+			margin : 0
+			top: -50px
+			left: 50%
+			width: 70px
+			margin-left: -35px
+	.container .row .advantages-item
+		min-height: 140px			
+	#product
+		padding: 30px 0
+	.footer-list-phone .phone-item
+		display: block
+		margin: 0 auto
+		margin-top: 15px	
+

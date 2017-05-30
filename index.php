@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KL26K7L');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Тактические EDC сумки</title>
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href=".//css/style.css" >
+<!--[if lt IE 9]><script src="js/html5.js?ver1.0"></script><![endif]-->	
+
+</head>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL26K7L"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<body>
+
+		<!-- HEADER -->
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="logo">
+						<a href="index.php">
+							<h2 class="title-logo">EDC-сумки</h2>
+							<p class="site-address">protectorplus.com.ua</p>
+						</a>
+					</div>
+					<div class="contacts">
+						<ul class="phone-block">
+							<li class="phone-item"><a href="tel:0666912427">066 691-24-27</a></li>
+							<li class="phone-item"><a href="tel:0987156021">098 715-60-21</a></li>
+							<li class="phone-item"><a href="tel:0630156572">063 015-65-72</a></li>
+						</ul>
+						<a href="#" class="consultation">Получить Консультацию</a>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+			<div class="consultation-popup popup">
+				<span class="close-popup"></span>
+				<h2 class="popup-title">Оставьте заявку</h2>
+				<p class="popup-text"> и мы сконтактируем с Вами в ближайшее время </p>
+				<form action="send.php" class="popup-form" method="post">
+					<input type="hidden" id="produ-1" name="title" value="Консультация" >
+					<div class="input-wrap">
+						<label class="label-item input-label">
+							<input  type="text"  class="input-item" id="name" name="name" placeholder="Ваше имя" required>
+						</label>
+					</div>
+					<div class="input-wrap">
+						<label class="label-item input-label">
+							<input  type="text"  class="input-item" id="phone" name="phone" placeholder="Номер телефона"  required>
+						</label>
+					</div>
+					<input type="submit" class="btn btn-send" value="Отправить">
+				</form>
+				<img src="img/bg-popup.png" class="popup-bg" alt="alt img">
+			</div>
+			<div class="header-baner">
+				<div class="overlay"></div>
+				<div class="popup-video">    
+					<div class="popup-videoo-block"></div>        
+					<span class="close-popup close-video"></span>
+				</div>
+				<div class="product-img">
+					<img src="img/header-img.png" alt="Прочная тактическая сумка EDC А1">
+					<img src="img/header-img-small.png" class="img-small" alt="Прочная тактическая сумка EDC А1">
+					<a href="#" class="link-video "> 
+						<i class="icon icon-play-video" ></i>
+						<span class="link-text">смотреть <br> видео</span>
+					</a>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="description-product">
+							<h1 class="product-title">Прочная тактическая сумка EDC А1</h1>
+							<p class="product-descr">- Идеально для повседневного использования</p>
+							<div class="order-datails">
+								<p class="price">690 <span>грн.</span></p>
+								<button class="btn btn-order">Оформить заказ</button>
+								<a href="product" class="catalog">каталог</a>
+							</div>
+						</div>
+						<div class="overlay"></div>
+						<div class="baner-popup popup">
+							<span class="close-popup"></span>
+							<h2 class="popup-title">Оставьте заявку</h2>
+							<p class="popup-text"> и мы сконтактируем с Вами в ближайшее время </p>
+							<form action="send.php" class="popup-form" method="post">
+								<input type="hidden" id="pro" name="title" value="Товар с баннера" >
+								<div class="input-wrap">
+									<label class="label-item input-label">
+										<input  type="text"  class="input-item" id="baner-name" name="name" placeholder="Ваше имя" required>
+									</label>
+								</div>
+								<div class="input-wrap">
+									<label class="label-item input-label">
+										<input  type="text"  class="input-item" id="baner-phone" name="phone" placeholder="Номер телефона" required>
+									</label>
+								</div>
+								<input type="submit" class="btn btn-send" value="Отправить">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</header>
+
+		<!-- HEADER END -->
+
+		<!-- CONTENT -->
+
+		<section id="product">
+			<div class="container">
+				<div class="row">
+					<div class="col-3 product-item">
+						<h2 class="product-title">EDC tablet bag</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-1-1.jpg" alt="EDC tablet bag">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-1-3.jpg" alt="EDC tablet bag">								
+								</div>
+							</div>
+						</div>
+						<p class="product-price">680 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>21</span>x<span>29</span>x<span>9</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">EDC buffalo bag</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-2-1.jpg" alt="EDC buffalo bag">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-2-3.jpg" alt="EDC buffalo bag">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">840 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>24</span>x<span>31</span>x<span>15</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+					<div class="col-3 product-item">
+						<h2 class="product-title">EDC А1 большая и маленькая</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-3-1.jpg" alt="EDC А1">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-3-2.jpg" alt="EDC А1">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-3-3.jpg" alt="EDC А1">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-3-4.jpg" alt="EDC А1">
+								</div>
+							</div>
+						</div>
+						<div class="tabs-wrap">
+							<div class="tabs-price active">
+								<p class="product-price ">590 грн</p>
+							</div>
+							<div class="tabs-price ">
+								<p class="product-price">690 грн</p>	
+							</div>
+							<div class="tabs">
+								<ul class="tabs-list">
+									<li class="tab-item active">S</li>
+									<li class="tab-item">L</li>
+								</ul>
+								<div class="tabs-content active">
+									<p class="bags-size"><span>20</span>x<span>26</span>x<span>11</span>см</p>
+								</div>
+								<div class="tabs-content">
+									<p class="bags-size"><span>22</span>x<span>29</span>x<span>12</span>см</p>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+					<div class="col-3 product-item">
+						<h2 class="product-title">Cумка-рюкзак jotter-bag</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-4-1.jpg" alt="Cумка-рюкзак jotter-bag">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-4-3.jpg" alt="Cумка-рюкзак bag">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">490 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>18</span>x<span>29</span>x<span>10</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">Сумка тактическая, городская EDC city bag</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-5-1.jpg" alt="EDC city bag">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">490 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>18</span>x<span>26</span>x<span>10</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">Сумка тактическая EDC V1-bag</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-6-1.jpg" alt="EDC city bag">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">620 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>26</span>x<span>26</span>x<span>13</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">Сумка тактическая EDC V2L-bag</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-7-1.jpg" alt="EDC V2L-bag">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">780 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>30</span>x<span>30</span>x<span>16</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">EDC things-bag </h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-8-1.jpg" alt="EDC things-bag">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-8-2.jpg" alt="EDC things-bag">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-8-3.jpg" alt="EDC things-bag">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">495 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>25</span>x<span>20</span>x<span>8</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">Сумка EDC A-4 format </h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-9-1.jpg" alt="Сумка EDC A-4 format">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">650 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>35</span>x<span>25</span>x<span>14</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">Сумка set-bag </h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-10-1.jpg" alt="Сумка set-bag">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-10-2.jpg" alt="Сумка set-bag">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-10-3.jpg" alt="Сумка set-bag">
+
+								</div>
+							</div>
+						</div>
+						<p class="product-price">550 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>27</span>x<span>20</span>x<span>8</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">Сумка поясная - Sandwich pocket</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-11-1.jpg" alt="Сумка поясная - Sandwich pocket">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-11-2.jpg" alt="Сумка поясная - Sandwich pocket">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">350 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>10</span>x<span>27</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+					<div class="col-3 product-item">
+						<h2 class="product-title">Сумка тактическая EDC Organizer-bag</h2>
+						<div class="product-slider">
+							<div>
+								<div class="slide-item">
+									<img src="img/product-12-1.jpg" alt="Сумка поясная - Sandwich pocket">
+								</div>
+							</div>
+							<div>
+								<div class="slide-item">
+									<img src="img/product-12-2.jpg" alt="Сумка поясная - Sandwich pocket">
+								</div>
+							</div>
+						</div>
+						<p class="product-price">750 грн</p>
+						<div class="one-size">
+							<i class="icon icon-one-size"></i>
+							<p class="bags-size"><span>29</span>x<span>22</span>x<span>12</span>см</p>	
+						</div>
+						<button class="btn btn-buy">Купить</button>
+					</div>
+
+
+					<div class="overlay"></div>
+					<div class="buy-popup popup">
+						<span class="close-popup"></span>
+						<h2 class="popup-title">Оставьте заявку</h2>
+						<p class="popup-text">и мы сконтактируем с Вами в ближайшее время </p>
+						<form action="buy.php" class="popup-form" method="post">
+							<input type="hidden" id="product-name" name="title" value=" " >
+							<input type="hidden" id="product-size" name="size" value="Стандартный размер" >
+							<div class="input-wrap">
+								<label class="label-item input-label">
+									<input  type="text"  class="input-item" id="buy-name" name="name" placeholder="Ваше имя" required>
+								</label>
+							</div>
+							<div class="input-wrap">
+								<label class="label-item input-label">
+									<input  type="text"  class="input-item" id="buy-phone" name="phone" placeholder="Номер телефона"  required>
+								</label>
+							</div>
+							<input type="submit" class="btn btn-send" value="Отправить">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col-3 advantages-item">
+						<div class="icon-wrap">
+							<i class="icon icon-free-shipping"></i>
+						</div>
+						<h2 class="advantages-title">Бесплатная доставка. <br> Отправка в день заказа</h2>
+					</div>
+					<div class="col-3 advantages-item">
+						<div class="icon-wrap">
+							<i class="icon icon-prepayment"></i>
+						</div>
+						<h2 class="advantages-title">Без предоплаты</h2>
+					</div>
+					<div class="col-3 advantages-item">
+						<div class="icon-wrap">
+							<i class="icon icon-gift"></i>
+						</div>
+						<h2 class="advantages-title">В подарок - патч на выбор</h2>
+					</div>
+					<div class="col-3 advantages-item">
+						<div class="icon-wrap">
+							<i class="icon icon-guarantee"></i>
+						</div>
+						<h2 class="advantages-title">Гарантия 3 месяца</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- CONTENT END -->
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<ul class="footer-list-phone">
+						<li class="phone-item"><a href="tel:0666912427">066 691-24-27</a></li>
+						<li class="phone-item"><a href="tel:0987156021">098 715-60-21</a></li>
+						<li class="phone-item"><a href="tel:0630156572">063 015-65-72</a></li>
+					</ul>
+					<p class="copyright">	&copy; 2017 все права защищен.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER END -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'pIiGznxvo5';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+	</body>
+	</html>
